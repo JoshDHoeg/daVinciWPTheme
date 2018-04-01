@@ -1,0 +1,16 @@
+#footer{
+  text-align: center;
+  color: $white;
+  padding: 256px 0 32px 0;
+  background-size: 100% auto;
+  background-position: center bottom;
+  .copyright{
+    padding: 64px;
+  }
+  a{
+    color: $orange;
+  }
+  #mc_embed_signup{
+    background: rgba(0,0,0,0);
+  }
+}

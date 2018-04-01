@@ -1,0 +1,22 @@
+.purpose{
+  padding: 32px 0;
+  .purpose-title{
+    display: table-cell;
+    vertical-align: top;
+    text-align: right;
+    width: 200px;
+    margin: 0;
+    padding: 12px;
+    h4{
+      font-weight: bold;
+      font-size: 36px;
+    }
+  }
+  .purpose-text{
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0;
+    padding: 12px;
+    border-left: solid 5px $orange;
+  }
+}

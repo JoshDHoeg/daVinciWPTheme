@@ -1,0 +1,40 @@
+{
+  "name": "vicuna-theme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "./node_modules/.bin/webpack --config webpack.dev.config.js",
+    "build:dev": "npm run dev",
+    "dev:watch": "npm run dev -- --watch",
+    "devwatch": "npm run dev:watch",
+    "start": "./node_modules/.bin/webpack-dev-server --config webpack.dev.config.js --open"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "clean-webpack-plugin": "^0.1.17",
+    "css-loader": "^0.28.9",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.6",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^2.30.1",
+    "node-sass": "^4.7.2",
+    "postcss-loader": "^2.0.10",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.1",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1",
+    "jquery.mmenu": "^7.0.2",
+    "open-iconic": "^1.1.1",
+    "popper.js": "^1.12.9",
+    "react-siema": "^1.0.1",
+    "scrollmagic": "^2.0.5",
+    "siema": "^1.5.1"
+  }
+}

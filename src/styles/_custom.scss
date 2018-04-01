@@ -1,0 +1,19 @@
+$primary:       $blue !default;
+$secondary:     $orange-light !default;
+$success:       $blue-light !default;
+$info:          $orange !default;
+$warning:       $blue-grey !default;
+$danger:        $orange-dark !default;
+$light:         rgba(0,0,0,0);
+
+$navbar-light-color:                $gray-100;
+$navbar-light-hover-color:          $gray-100;
+$navbar-light-active-color:         rgba($orange-light, 1) !default;
+$navbar-light-disabled-color:       rgba($orange-light, .3) !default;
+$navbar-light-toggler-icon-bg:      str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-light-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"), "#", "%23") !default;
+$navbar-light-toggler-border-color: rgba($orange-light, .1) !default;
+
+
+$font-family-sans-serif:      'Open Sans', sans-serif;
+$font-family-monospace:       'Lora', serif;
+$font-family-base: 'Lora', serif;

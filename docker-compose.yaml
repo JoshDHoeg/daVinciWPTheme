@@ -1,0 +1,35 @@
+version: '3.1'
+services:
+  wordpress:
+    image: wordpress:4.9.4-php7.0-apache
+    depends_on:
+      - mysql
+    restart: always
+    ports:
+      - 8085:80
+    links:
+      - "mysql:db"
+    volumes:
+      - "./src:/var/www/html/wp-content/themes/davinci"
+      - ./config/php.ini:/usr/local/etc/php/php.ini
+      - ./config/uploads:/var/www/html/wp-content/uploads
+      - ./config/plugins:/var/www/html/wp-content/plugins
+    environment:
+      WORDPRESS_DB_PASSWORD: root
+      WORDPRESS_TABLE_PREFIX: wp_davinci_
+      WORDPRESS_DEBUG: 'true'
+
+  mysql:
+    image: mariadb:10.3
+    ports:
+     - 33306:3306
+    restart: always
+    volumes:
+      - db-data:/var/lib/mysql
+      - ./config/vicuna-theme.sql.gz:/docker-entrypoint-initdb.d/vicuna-theme.sql.gz
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: wordpress
+
+volumes:
+  db-data:

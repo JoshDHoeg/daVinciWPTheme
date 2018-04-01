@@ -1,0 +1,84 @@
+#funnel{
+  .col-lg-6{
+    padding: 128px 28px 256px 28px;
+    background-size: cover;
+    .cta{
+      padding: 6px;
+      width: 200px;
+      margin: 0 8px 32px 8px;
+      font-size: 24px;
+      border-radius: 0;
+      position: relative;
+      z-index: 2;
+    }
+    .container{
+      width: 60%;
+    }
+    h3{
+      padding: 16px 0;
+    }
+    h4{
+      padding: 16px 0;
+    }
+    &.educators{
+      text-align: right;
+      .container{
+        float: right;
+      }
+      h3{
+        color: $blue;
+        font-size: 36px;
+        font-weight: bolder;
+        position: relative;
+        z-index: 2;
+      }
+      h4{
+        color: $white;
+        position: relative;
+        z-index: 2;
+      }
+      .cta{
+        background: $blue;
+        border: $blue;
+        color: $orange;
+      }
+      &:after{
+        content: '';
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        position: absolute;
+        background: rgba($orange, 0.75);
+        z-index: 1;
+      }
+    }
+    &.parents{
+      .container{
+        float: left;
+      }
+      h3{
+        color: $orange;
+        font-size: 36px;
+        font-weight: bolder;
+        position: relative;
+        z-index: 2;
+      }
+      h4{
+        color: $white;
+        position: relative;
+        z-index: 2;
+      }
+      &:after{
+        content: '';
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        position: absolute;
+        background: rgba($blue, 0.75);
+        z-index: 1;
+      }
+    }
+  }
+}
