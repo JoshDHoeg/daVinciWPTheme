@@ -23,13 +23,13 @@ get_header(); ?>
         <div class="intro-text">
           <h1>'O The Joy!</h1>
           <h2>Rekindling the Possibilities and Joys found in Classroom Teaching</h2>
-          <div class="btn btn-secondary cta">
+          <a class="btn btn-secondary cta" href="https://www.amazon.com/Joy-Managing-regaining-rediscovering-teaching-ebook/dp/B07C7JKWJV/">
             Preorder Now!
-          </div>
+          </a>
         </div>
       </div>
       <div class="col-lg-6 image">
-        <img class="demo-image" src="<?php echo get_template_directory_uri(); ?>/images/book.svg" alt="">
+        <img class="demo-image" src="<?php echo get_template_directory_uri(); ?>/images/book.jpg" alt="">
       </div>
     </div>
   </div>
@@ -136,18 +136,18 @@ get_header(); ?>
         <div class="container">
           <h3>For The Educators</h3>
           <h4>Online courses, workshops or our book will improve your teaching.</h4>
-          <div class="btn btn-secondary cta">
+          <a class="btn btn-secondary cta" href="https://www.davincilearninginstitute.com/for-educators.html">
             Resources
-          </div>
+          </a>
         </div>
       </div>
       <div class="col-lg-6 parents" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/parents.png)">
         <div class="container">
           <h3>For The Parents</h3>
           <h4>Educational coaching can make  a huge difference for your child</h4>
-          <div class="btn btn-secondary cta">
+          <a class="btn btn-secondary cta" href="https://www.davincilearninginstitute.com/for-parents.html">
             Courses
-          </div>
+          </a>
         </div>
       </div>
     </div>
